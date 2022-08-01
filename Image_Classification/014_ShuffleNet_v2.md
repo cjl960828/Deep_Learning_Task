@@ -1,6 +1,6 @@
 ### ShuffleNet V2
 
-- 四条指导准则 【MAC 也会影响 FLOPs】
+- 四条指导准则 【除了计算 FLOPs 之外，还要考虑 MAC，其也会对模型计算速度造成影响 】
 
   1. 当卷积层的输入特征图与输出特征图 channel 相等时 MAC 最小 (memory access cost) [保持 FLOPs 不变的前提]
   2. 当组卷积中的 groups 增大时(保持 FLOPs 不变的前提)，此时的 MAC 也会变大
