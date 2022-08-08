@@ -106,7 +106,7 @@
           return out
    
    
-  #通道重排
+  # 通道重排
   def ChannelShuffle(x,groups):
       # Pytorch 数据格式 [batch_size, channel, height, width]
       batch_size, channel, height, width = x.size()
